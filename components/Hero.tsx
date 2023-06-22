@@ -7,7 +7,7 @@ import{MdWavingHand} from "react-icons/md"
 
 const Hero = () => {
   return (
-    <section id="home">
+    <section className = "pt-1" id="home">
       <div className="my-20 py-20 flex flex-col text-center items-center justify-center">
         <div>
           <Image

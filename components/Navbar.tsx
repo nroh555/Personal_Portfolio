@@ -33,6 +33,7 @@ const NAV_TITLES: Array<NavItem> = [
 ];
 
 const Navbar = () => {
+  const [active, setActive] = useState("");
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
   const [navBar, setNavBar] = useState(false); //State responsible for mobile or desktop view
@@ -42,20 +43,22 @@ const Navbar = () => {
       <div className="justify-between lg:items-center lg:flex">
         <div>
           <div className="flex items-center justify-between">
-            <div className="sm:py-6 sm:block">
-              <Image
-                src={"/logo.png"}
-                alt="logo"
-                width = {70}
-                height = {70}
-                className="mb-3 inline-block"
-              />
-              <h1 className="inline-block ps-5 text-3xl text-[#006AFA] font-bold">
-                Naren Rohan
-              </h1>
-            </div>
+            <Link to="home" onClick = {() => {setActive("")}}>
+              <div className="sm:py-6 sm:block">
+                <Image
+                  src={"/logo.png"}
+                  alt="logo"
+                  width={50}
+                  height={50}
+                  className="mb-3 inline-block"
+                />
+                <h1 className="inline-block ps-5 text-3xl text-[#006AFA] font-bold">
+                  Naren Rohan
+                </h1>
+              </div>
+            </Link>
             <div className="lg:hidden">
-              <button onClick = {() => setNavBar(!navBar)}>
+              <button onClick={() => setNavBar(!navBar)}>
                 {navBar ? <IoMdClose size={40} /> : <IoMdMenu size={40} />}
               </button>
             </div>
@@ -70,18 +73,22 @@ const Navbar = () => {
             <div className="lg:flex lg:space-x-10 space-y-8 lg:space-y-0">
               {NAV_TITLES.map((label, index) => {
                 return (
-                    <Link
+                  <Link
                     key={index}
                     to={label.page}
-                    className={
-                      "block lg:inline-block text-xl text-neutral-900 hover:text-[#006AFA] dark:text-neutral-100 dark:hover:text-[#4B91F1]"
+                    className={`${
+                      active === label.page ? "font-bold" : "text-neutral-900"}
+                      block lg:inline-block text-xl text-neutral-900 hover:text-[#006AFA] dark:text-neutral-100 dark:hover:text-[#4B91F1]`
                     }
                     activeClass="active"
-                    onClick={() => setNavBar(!navBar)}
+                    onClick={() => {
+                        setNavBar(!navBar)
+                        setActive(label.page)
+                    }}
                   >
                     {label.title}
                   </Link>
-                )
+                );
               })}
               {currentTheme === "dark" ? (
                 <button
@@ -93,7 +100,7 @@ const Navbar = () => {
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
-                  className= "border-2 border-solid border-black rounded-lg"
+                  className="border-2 border-solid border-black rounded-lg"
                 >
                   <RiMoonFill size={30} />
                 </button>
