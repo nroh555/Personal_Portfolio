@@ -33,7 +33,7 @@ const Hero = () => {
                smooth = {true}
                duration={400}
             >
-                <TfiHandPointDown className = "animate-bounce" size = {40}/>
+                <TfiHandPointDown className = "animate-bounce" size = {50}/>
             </Link>
         </div>
       </div>
