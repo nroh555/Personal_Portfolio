@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
@@ -42,10 +43,12 @@ const Navbar = () => {
         <div>
           <div className="flex items-center justify-between">
             <div className="sm:py-6 sm:block">
-              <img
+              <Image
                 src={"/logo.png"}
                 alt="logo"
-                className="w-20 h-20 mb-5 inline-block"
+                width = {70}
+                height = {70}
+                className="mb-3 inline-block"
               />
               <h1 className="inline-block ps-5 text-3xl text-[#006AFA] font-bold">
                 Naren Rohan
