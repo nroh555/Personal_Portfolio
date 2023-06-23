@@ -115,7 +115,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-center mt-1">
+        <div className="flex flex-row justify-center mt-5">
             <Link
                to = "projects"
                activeClass="active"
