@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Link } from "react-scroll";
 import { TfiHandPointDown } from "react-icons/tfi";
 import { BsGithub } from "react-icons/bs";
+import Typed from "react-typed"
 
 const skills = [
   {
@@ -63,11 +64,15 @@ const skills = [
 const About = () => {
   return (
     <section className="sm:pt-20" id="about">
-      <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
-        <h1 className="text-center font-bold text-4xl">
-          About Me!
-          <hr className="w-10 h-1 mx-auto my-4 bg-blue-700 border-0 rounded"></hr>
-        </h1>
+      <div className="text-center my-10 pb-10 lg:pt-10 lg:pb-10">
+        <Typed
+           className="font-bold text-4xl"
+           strings = {["About Me!"]}
+           typeSpeed={40}
+           backSpeed={60}
+           loop
+        />
+        <hr className="w-10 h-1 mx-auto my-4 bg-blue-700 border-0 rounded"></hr>
         <div className="flex flex-col space-y-5 items-stretch jusitfy-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
           <div>
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">

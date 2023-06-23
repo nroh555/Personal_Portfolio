@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
+import Typed from "react-typed"
 
 const projects = [
   {
@@ -38,11 +39,15 @@ const projects = [
 const Projects = () => {
   return (
     <section className="sm: pt-20" id="projects">
-      <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
-        <h1 className="text-center font-bold text-4xl">
-          Projects
-          <hr className="w-10 h-1 mx-auto my-4 bg-blue-700 border-0 rounded"></hr>
-        </h1>
+      <div className="text-center my-10 pb-10 lg:pt-10 lg:pb-10">
+      <Typed
+           className="font-bold text-4xl"
+           strings = {["Projects"]}
+           typeSpeed={40}
+           backSpeed={60}
+           loop
+        />
+        <hr className="w-10 h-1 mx-auto my-4 bg-blue-700 border-0 rounded"></hr>
         <div className="flex flex-col space-y-5">
           {projects.map((project, index) => {
             return (
@@ -62,14 +67,12 @@ const Projects = () => {
                     <p className="text-xl leading-7 mb-8 text-neutral-700 dark:text-neutral-100">
                       {project.description}
                     </p>
-                    <div>
-                      <Link href={project.github} target="_blank">
+                    <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          className="float-right hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
-                    </div>
                   </div>
                 </div>
               </div>

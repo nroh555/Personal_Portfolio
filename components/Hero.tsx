@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Link } from "react-scroll";
 import {TfiHandPointDown} from "react-icons/tfi"
 import{MdWavingHand} from "react-icons/md"
+import Typed from "react-typed"
 
 const Hero = () => {
   return (
@@ -19,11 +20,13 @@ const Hero = () => {
           />
         </div>
         <div>
-          <h1 className="font-semibold lg:text-[55px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[98px] mt-2">
-            Hey there, I am <span className="text-[#006AFA]">Naren! <MdWavingHand className = "inline-block" size = {30}></MdWavingHand></span>
-          </h1>
+          <Typed 
+             className="font-semibold lg:text-[55px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[98px] mt-2"
+             strings={["Hey there, I am Naren Rohan!"]}
+             typeSpeed={40}
+            />
           <p className= "font-medium lg:text-[20px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2">
-            I am a penultimate year <span className = "text-[#006AFA]">software engineering student </span> at the University of Auckland.
+            I am a penultimate year <span className = "text-[#006AFA]">software engineering student </span> at the University of Auckland. <span><MdWavingHand className = "text-[#006AFA] inline-block" size = {30}></MdWavingHand></span>
           </p>
         </div>
         <div className="flex flex-row justify-center mt-10">
