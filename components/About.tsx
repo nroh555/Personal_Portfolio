@@ -64,9 +64,9 @@ const skills = [
 const About = () => {
   return (
     <section className="sm:pt-20" id="about">
-      <div className="text-center my-10 pb-10 lg:pt-10 lg:pb-10">
+      <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
         <Typed
-           className="font-bold text-4xl"
+           className="flex items-center justify-center font-bold text-4xl"
            strings = {["About Me!"]}
            typeSpeed={40}
            backSpeed={60}
