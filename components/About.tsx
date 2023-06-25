@@ -72,7 +72,7 @@ const About = () => {
            backSpeed={60}
            loop
         />
-        <hr className="w-10 h-1 mx-auto my-4 bg-blue-700 border-0 rounded"></hr>
+        <hr className="w-10 h-1 mx-auto my-4 bg-[#006AFA] border-0 rounded"></hr>
         <div className="flex flex-col space-y-5 items-stretch jusitfy-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
           <div>
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
@@ -101,7 +101,7 @@ const About = () => {
           </div>
           <div>
             <h1 className="text-center text-2xl font-bold mb-6 ml-4 md:text-left">
-              My Skills
+              Skills
             </h1>
             <div className="flex flex-wrap flex-row justify-center md:justify-start">
               {skills.map((item, index) => {

@@ -3,7 +3,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
-import Typed from "react-typed"
+import Typed from "react-typed";
+import Slide from "./Slide";
 
 const projects = [
   {
@@ -40,41 +41,45 @@ const Projects = () => {
   return (
     <section className="sm: pt-20" id="projects">
       <div className="text-center my-10 pb-10 lg:pt-10 lg:pb-10">
-      <Typed
-           className="font-bold text-4xl"
-           strings = {["Projects"]}
-           typeSpeed={40}
-           backSpeed={60}
-           loop
+        <Typed
+          className="font-bold text-4xl"
+          strings={["Projects"]}
+          typeSpeed={40}
+          backSpeed={60}
+          loop
         />
-        <hr className="w-10 h-1 mx-auto my-4 bg-blue-700 border-0 rounded"></hr>
+        <hr className="w-10 h-1 mx-auto my-4 bg-[#006AFA] border-0 rounded"></hr>
         <div className="flex flex-col space-y-5">
           {projects.map((project, index) => {
             return (
               <div key={index}>
-                <div className="flex flex-col md:flex-row md:space-x-12">
-                  <div className="mt-12 md:w-1/2">
-                    <Image
-                      src={project.image}
-                      alt=""
-                      width={1000}
-                      height={1000}
-                      className="rounded-xl shadow-xl"
-                    />
-                  </div>
-                  <div className="mt-12 md:w-1/2">
-                    <h1 className="text-2xl font-bold mb-2">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-8 text-neutral-700 dark:text-neutral-100">
-                      {project.description}
-                    </p>
-                    <Link href={project.github} target="_blank">
+                <Slide offset="-300px 0px -300px 0px">
+                  <div className="flex flex-col animate-slideUpCubicBezier animation-delay-5 md:flex-row md:space-x-12">
+                    <div className="mt-12 md:w-1/2">
+                      <Image
+                        src={project.image}
+                        alt=""
+                        width={1000}
+                        height={1000}
+                        className="rounded-xl shadow-xl"
+                      />
+                    </div>
+                    <div className="mt-12 md:w-1/2">
+                      <h1 className="text-2xl font-bold mb-2">
+                        {project.name}
+                      </h1>
+                      <p className="text-xl leading-7 mb-8 text-neutral-700 dark:text-neutral-100">
+                        {project.description}
+                      </p>
+                      <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
                           className="float-right hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
+                    </div>
                   </div>
-                </div>
+                </Slide>
               </div>
             );
           })}

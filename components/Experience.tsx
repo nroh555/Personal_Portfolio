@@ -47,9 +47,9 @@ const ExperienceCard = ({ experience }: any) => (
     }
   >
     <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-2xl font-bold">{experience.title}</h3>
         {experience.date}
-        <p className = "text-secondary text-[16px] font-semibold" style = {{margin:0}}>{experience.company_name}</p>
+        <p className = "text-2xl font-semibold" style = {{margin:0}}>{experience.company_name}</p>
     </div>
     <ul className="mt-5 list-disc ml-5 space-y-2">
         <li className="text-white-100 text-[14px] pl-1 tracking-wider">{experience.points[0]}</li>
@@ -62,7 +62,7 @@ const ExperienceCard = ({ experience }: any) => (
 const Experience = () => {
   return (
     <section className ="sm: pt-20" id="experience">
-      <div className="my-5 pb-10 lg:pt-10 lg:pb-10">
+      <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
         <Typed
           className="flex items-center justify-center font-bold text-4xl"
           strings={["Experience"]}
@@ -70,7 +70,7 @@ const Experience = () => {
           backSpeed={60}
           loop
         />
-        <hr className="w-10 h-1 mx-auto my-4 bg-blue-700 border-0 rounded"></hr>
+        <hr className="w-10 h-1 mx-auto my-4 bg-[#006AFA] border-0 rounded"></hr>
       </div>
       <div className="flex flex-col">
         <VerticalTimeline
