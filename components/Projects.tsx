@@ -39,7 +39,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="sm: pt-20" id="projects">
+    <section className="pt-20" id="projects">
       <div className="text-center my-10 pb-10 lg:pt-10 lg:pb-10">
         <Typed
           className="font-bold text-4xl"
