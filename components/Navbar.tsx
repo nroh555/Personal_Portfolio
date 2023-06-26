@@ -38,12 +38,12 @@ const Navbar = () => {
   const [navBar, setNavBar] = useState(false); //State responsible for mobile or desktop view
 
   return (
-    <header className="w-full mx-auto sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
+    <header className="w-full mx-auto px-10 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
       <div className="justify-between lg:items-center lg:flex">
         <div>
           <div className="flex items-center justify-between">
             <Link to="home" onClick = {() => {setActive("")}}>
-              <div className="sm:py-5 sm:mt-2 sm:ml-1 sm:block">
+              <div className="py-5 mt-2 ml-1 block">
                 <Image
                   src={"/logo.png"}
                   alt="logo"
@@ -69,7 +69,7 @@ const Navbar = () => {
               navBar ? "block" : "hidden"
             }`}
           >
-            <div className="lg:flex lg:space-x-10 space-y-8 lg:space-y-0">
+            <div className="ml-5 lg:flex lg:space-x-10 space-y-8 lg:space-y-0">
               {NAV_TITLES.map((label, index) => {
                 return (
                   <Link

@@ -8,7 +8,7 @@ import Typed from "react-typed"
 
 const Hero = () => {
   return (
-    <section className = "pt-1" id="home">
+    <section className = "sm:pt-1" id="home">
       <div className="my-20 py-20 flex flex-col text-center items-center justify-center">
         <div>
           <Image
