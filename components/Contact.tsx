@@ -58,7 +58,7 @@ const Contact = () => {
 
   return (
     <section className="pt-20" id="contact">
-      <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
+      <div className="sm:my-10 pb-10 lg:pt-10 lg:pb-10">
         <Typed
           className="flex items-center justify-center font-bold text-4xl"
           strings={["Contact"]}
@@ -70,7 +70,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="flex flex-col gap-7"
+          className="pt-10 flex flex-col gap-7"
         >
           <label className="flex flex-col">
             <span className="text-bold font-medium mb-5 dark:text-white">
