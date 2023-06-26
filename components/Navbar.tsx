@@ -43,7 +43,7 @@ const Navbar = () => {
         <div>
           <div className="flex items-center justify-between">
             <Link to="home" onClick = {() => {setActive("")}}>
-              <div className="sm:py-6 sm:block">
+              <div className="sm:py-6 mt-2 ml-1 sm:block">
                 <Image
                   src={"/logo.png"}
                   alt="logo"
