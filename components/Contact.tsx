@@ -58,7 +58,7 @@ const Contact = () => {
 
   return (
     <section className="pt-20" id="contact">
-      <div className="sm:my-10 pb-10 lg:pt-10 lg:pb-10">
+      <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
         <Typed
           className="flex items-center justify-center font-bold text-4xl"
           strings={["Contact"]}

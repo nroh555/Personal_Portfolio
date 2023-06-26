@@ -40,9 +40,9 @@ const projects = [
 const Projects = () => {
   return (
     <section className="pt-20" id="projects">
-      <div className="text-center sm:my-10 pb-10 lg:pt-10 lg:pb-10">
+      <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
         <Typed
-          className="font-bold text-4xl"
+          className="flex items-center justify-center font-bold text-4xl"
           strings={["Projects"]}
           typeSpeed={40}
           backSpeed={60}
