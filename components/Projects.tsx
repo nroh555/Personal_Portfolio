@@ -21,12 +21,12 @@ const projects = [
       "Full-stack developer in an agile team of 10 to develop the event registration web application for Auckland University Pool Association (ASPA) which supports payment of events through Stripe.",
     image: "/projects/aspa.png",
     github: "https://github.com/nroh555/aspa-portal-v2",
-    skills: ["MERN", "JavaScript", "TailwindCSS"],
+    skills: ["MERN", "JavaScript", "Tailwind CSS"],
   },
   {
     name: "Quick Draw",
     description:
-      "Game to improve young children's speed drawing abilities through a range of words with varying difficulties and modes in a team of 3 for SOFTENG 206. A ML model was implemented using PyTorch to predict the drawings.",
+      "Game to improve young children's speed drawing abilities through a range of words with varying difficulties and modes in a team of 3 for SOFTENG 206 using JavaFX. A ML model was implemented using PyTorch to predict the drawings.",
     image: "/projects/quick-draw.png",
     github: "https://github.com/nroh555/Quick-Draw-App",
     skills: ["Java", "CSS", "PyTorch"],
@@ -37,7 +37,7 @@ const projects = [
       "This website that your are looking at right now. It also responsive too and was made using Next.js while the contact form below utilises EmailJS.",
     image: "/projects/portfolio.png",
     github: "https://github.com/nroh555/Personal_Portfolio",
-    skills: ["Next.js", "TypeScript", "TailwindCSS"],
+    skills: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
 ];
 
