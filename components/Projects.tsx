@@ -10,30 +10,34 @@ const projects = [
   {
     name: "Taitamariki Potentia",
     description:
-      "Project manager and developer of the web application with the aim of easing students wanting to step foot into the tech industry. This project was created using NextJS, Typescript and Firebase.",
+      "Project manager and developer of the web application with the aim of easing 1000+ students wanting to step foot into the tech industry.",
     image: "/projects/taitamariki.png",
     github: "https://github.com/nroh555/taitam-portal",
+    skills: ["Next.js", "Typescript", "Firebase"],
   },
   {
     name: "ASPA V2",
     description:
-      "Full-stack developer in an agile team of 10 to develop the event registration web application for Auckland University Pool Association (ASPA) using MERN.",
+      "Full-stack developer in an agile team of 10 to develop the event registration web application for Auckland University Pool Association (ASPA) which supports payment of events through Stripe.",
     image: "/projects/aspa.png",
     github: "https://github.com/nroh555/aspa-portal-v2",
+    skills: ["MERN", "Javascript", "TailwindCSS"],
   },
   {
     name: "Quick Draw",
     description:
-      "A game to improve children's speed drawing skills. JavaFx and CSS was used to build the functionality and the UI while PyTorch was used to implement a ML model that predicts the users drawing.",
+      "Game to improve young children's speed drawing abilities through a range of words with varying difficulties and modes in a team of 3 for SOFTENG 206. A ML model was implemented using PyTorch to predict the drawings.",
     image: "/projects/quick-draw.png",
     github: "https://github.com/nroh555/Quick-Draw-App",
+    skills: ["Java", "CSS", "PyTorch"],
   },
   {
     name: "This Website",
     description:
-      "The website that your are looking at right now. This website was created using NextJS, Typescript and Tailwind CSS.",
+      "This website that your are looking at right now. It also responsive too and was made using Next.js while the contact form below utilises EmailJS.",
     image: "/projects/portfolio.png",
     github: "https://github.com/nroh555/Personal_Portfolio",
+    skills: ["Next.js", "Typescript", "TailwindCSS"],
   },
 ];
 
@@ -74,9 +78,20 @@ const Projects = () => {
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
-                          className="float-right hover:-translate-y-1 transition-transform cursor-pointer"
+                          className="mt-4 flex float-right hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
+                      <div className="flex flex-wrap flex-row justify-start">
+                      <ul className="bg-gray-200 px-4 py-2 mr-2 mt-2 rounded text-gray-600 font-semibold">
+                          {project.skills[0]}
+                        </ul>
+                        <ul className="bg-gray-200 px-4 py-2 mr-2 mt-2 rounded text-gray-600 font-semibold">
+                          {project.skills[1]}
+                        </ul>
+                        <ul className="bg-gray-200 px-4 py-2 mr-2 mt-2 rounded text-gray-600 font-semibold">
+                          {project.skills[2]}
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </Slide>
