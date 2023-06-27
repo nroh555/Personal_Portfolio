@@ -13,7 +13,7 @@ const projects = [
       "Project manager and developer of the web application with the aim of easing 1000+ students wanting to step foot into the tech industry.",
     image: "/projects/taitamariki.png",
     github: "https://github.com/nroh555/taitam-portal",
-    skills: ["Next.js", "Typescript", "Firebase"],
+    skills: ["Next.js", "TypeScript", "Firebase"],
   },
   {
     name: "ASPA V2",
@@ -21,7 +21,7 @@ const projects = [
       "Full-stack developer in an agile team of 10 to develop the event registration web application for Auckland University Pool Association (ASPA) which supports payment of events through Stripe.",
     image: "/projects/aspa.png",
     github: "https://github.com/nroh555/aspa-portal-v2",
-    skills: ["MERN", "Javascript", "TailwindCSS"],
+    skills: ["MERN", "JavaScript", "TailwindCSS"],
   },
   {
     name: "Quick Draw",
@@ -37,7 +37,7 @@ const projects = [
       "This website that your are looking at right now. It also responsive too and was made using Next.js while the contact form below utilises EmailJS.",
     image: "/projects/portfolio.png",
     github: "https://github.com/nroh555/Personal_Portfolio",
-    skills: ["Next.js", "Typescript", "TailwindCSS"],
+    skills: ["Next.js", "TypeScript", "TailwindCSS"],
   },
 ];
 
