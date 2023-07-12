@@ -32,9 +32,25 @@ const projects = [
     skills: ["Java", "CSS", "PyTorch"],
   },
   {
+    name: "Sapling",
+    description: 
+    "A web application that provides a gamified experience for co-workers to help them socialise within the workspace via Slack API. Awarded 2nd place for DEVS x GDSC 2023 hackathon.",
+    image: "/projects/sapling.png",
+    github: "https://github.com/nroh555/Sapling",
+    skills: ["React", "Node.js", "Express.js"]
+  },
+  {
+    name: "NutriScan",
+    description: 
+    "A real-time system that detects barcodes of food and drink products using OpenCV and Pyzbar via the user's webcam. Upon detection, it then fetches information from Open Food Facts API to retrieve information about the product's name, brand and nutrient level which will then be displayed to the user. ",
+    image: "/projects/nutriscan.png",
+    github: "https://github.com/nroh555/BarcodeDetection",
+    skills: ["Python", "OpenCV", "Pyzbar"]
+  },
+  {
     name: "This Website",
     description:
-      "This website that your are looking at right now. It also responsive too and was made using Next.js while the contact form below utilises EmailJS.",
+      "This website that your are looking at right now. It is also responsive too and was made using Next.js while the contact form below utilises EmailJS.",
     image: "/projects/portfolio.png",
     github: "https://github.com/nroh555/Personal_Portfolio",
     skills: ["Next.js", "TypeScript", "Tailwind CSS"],
