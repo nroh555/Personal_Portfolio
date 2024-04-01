@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 import Slide from "./Slide";
 
 const projects = [
@@ -33,19 +33,19 @@ const projects = [
   },
   {
     name: "Sapling",
-    description: 
-    "A web application that provides a gamified experience for co-workers to help them socialise within the workspace via Slack API. Awarded 2nd place for DEVS x GDSC 2023 hackathon.",
+    description:
+      "A web application that provides a gamified experience for co-workers to help them socialise within the workspace via Slack API. Awarded 2nd place for DEVS x GDSC 2023 hackathon.",
     image: "/projects/sapling.png",
     github: "https://github.com/nroh555/Sapling",
-    skills: ["React", "Node.js", "Express.js"]
+    skills: ["React", "Node.js", "Express.js"],
   },
   {
     name: "NutriScan",
-    description: 
-    "A real-time system that detects barcodes of food and drink products using OpenCV and Pyzbar via the user's webcam. Upon detection, it then fetches information from Open Food Facts API to retrieve information about the product's name, brand and nutrient level which will then be displayed to the user. ",
+    description:
+      "A real-time system that detects barcodes of food and drink products using OpenCV and Pyzbar via the user's webcam. Upon detection, it then fetches information from Open Food Facts API to retrieve information about the product's name, brand and nutrient level which will then be displayed to the user. ",
     image: "/projects/nutriscan.png",
     github: "https://github.com/nroh555/BarcodeDetection",
-    skills: ["Python", "OpenCV", "Pyzbar"]
+    skills: ["Python", "OpenCV", "Pyzbar"],
   },
   {
     name: "This Website",
@@ -61,7 +61,7 @@ const Projects = () => {
   return (
     <section className="pt-20" id="projects">
       <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
-        <Typed
+        <ReactTyped
           className="flex items-center justify-center font-bold text-4xl"
           strings={["Projects"]}
           typeSpeed={40}
@@ -98,7 +98,7 @@ const Projects = () => {
                         />
                       </Link>
                       <div className="flex flex-wrap flex-row justify-start">
-                      <ul className="bg-gray-200 px-4 py-2 mr-2 mt-2 rounded text-gray-600 font-semibold">
+                        <ul className="bg-gray-200 px-4 py-2 mr-2 mt-2 rounded text-gray-600 font-semibold">
                           {project.skills[0]}
                         </ul>
                         <ul className="bg-gray-200 px-4 py-2 mr-2 mt-2 rounded text-gray-600 font-semibold">

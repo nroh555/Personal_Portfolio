@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -89,7 +89,7 @@ const Experience = () => {
   return (
     <section className="pt-20" id="experience">
       <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
-        <Typed
+        <ReactTyped
           className="flex items-center justify-center font-bold text-4xl"
           strings={["Experience"]}
           typeSpeed={40}

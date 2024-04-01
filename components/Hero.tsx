@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Link } from "react-scroll";
 import { TfiHandPointDown } from "react-icons/tfi";
 import { MdWavingHand } from "react-icons/md";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
@@ -20,7 +20,7 @@ const Hero = () => {
           />
         </div>
         <div>
-          <Typed
+          <ReactTyped
             className="font-semibold lg:text-[55px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[98px] mt-2"
             strings={["Hey there, I am Naren Rohan!"]}
             typeSpeed={40}

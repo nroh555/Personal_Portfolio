@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { useState, useRef } from "react";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 import emailjs from "@emailjs/browser";
 
-const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || ''
-const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || ''
-const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -59,7 +59,7 @@ const Contact = () => {
   return (
     <section className="pt-20" id="contact">
       <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
-        <Typed
+        <ReactTyped
           className="flex items-center justify-center font-bold text-4xl"
           strings={["Contact"]}
           typeSpeed={40}

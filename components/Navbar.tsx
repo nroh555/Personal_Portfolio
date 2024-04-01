@@ -42,7 +42,12 @@ const Navbar = () => {
       <div className="justify-between lg:items-center lg:flex">
         <div>
           <div className="flex items-center justify-between">
-            <Link to="home" onClick = {() => {setActive("")}}>
+            <Link
+              to="home"
+              onClick={() => {
+                setActive("");
+              }}
+            >
               <div className="py-5 mt-2 ml-1 block">
                 <Image
                   src={"/logo.png"}
@@ -76,13 +81,13 @@ const Navbar = () => {
                     key={index}
                     to={label.page}
                     className={`${
-                      active === label.page ? "font-bold" : "text-neutral-900"}
-                      block lg:inline-block text-xl text-neutral-900 hover:text-[#006AFA] dark:text-neutral-100 dark:hover:text-[#4B91F1]`
+                      active === label.page ? "font-bold" : "text-neutral-900"
                     }
+                      block lg:inline-block text-xl text-neutral-900 hover:text-[#006AFA] dark:text-neutral-100 dark:hover:text-[#4B91F1]`}
                     activeClass="active"
                     onClick={() => {
-                        setNavBar(!navBar)
-                        setActive(label.page)
+                      setNavBar(!navBar);
+                      setActive(label.page);
                     }}
                   >
                     {label.title}
