@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Link } from "react-scroll";
 import { TfiHandPointDown } from "react-icons/tfi";
 import { BsGithub } from "react-icons/bs";
-import Typed from "react-typed"
+import Typed from "react-typed";
 
 const skills = [
   {
@@ -24,16 +24,16 @@ const skills = [
     skill: "Git",
   },
   {
-    image: "/tech/figma.png",
-    skill: "Figma",
-  },
-  {
     image: "/tech/reactjs.png",
     skill: "ReactJS",
   },
   {
     image: "/tech/tailwind.png",
     skill: "TailwindCSS",
+  },
+  {
+    image: "/tech/Next.png",
+    skill: "Next.JS",
   },
   {
     image: "/tech/typescript.png",
@@ -44,6 +44,10 @@ const skills = [
     skill: "Java",
   },
   {
+    image: "/tech/CSharp.png",
+    skill: "C#",
+  },
+  {
     image: "/tech/python.png",
     skill: "Python",
   },
@@ -52,12 +56,16 @@ const skills = [
     skill: "Firebase",
   },
   {
-    image: "/tech/aws.png",
-    skill: "AWS",
+    image: "/tech/mongo.png",
+    skill: "MongoDB",
   },
   {
     image: "/tech/gcp.png",
     skill: "GCP",
+  },
+  {
+    image: "/tech/docker.png",
+    skill: "Docker",
   },
 ];
 
@@ -66,11 +74,11 @@ const About = () => {
     <section className="pt-20" id="about">
       <div className="my-10 pb-10 lg:pt-10 lg:pb-10">
         <Typed
-           className="flex items-center justify-center font-bold text-4xl"
-           strings = {["About Me!"]}
-           typeSpeed={40}
-           backSpeed={60}
-           loop
+          className="flex items-center justify-center font-bold text-4xl"
+          strings={["About Me!"]}
+          typeSpeed={40}
+          backSpeed={60}
+          loop
         />
         <hr className="w-10 h-1 mx-auto my-4 bg-[#006AFA] border-0 rounded"></hr>
         <div className="flex flex-col space-y-5 items-stretch jusitfy-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
@@ -116,19 +124,14 @@ const About = () => {
                   />
                 );
               })}
-               <BsGithub size={75} className="ml-2 px-2 py-1 mr-1 mt-1"/>
+              <BsGithub size={75} className="ml-2 px-2 py-1 mr-1 mt-1" />
             </div>
           </div>
         </div>
         <div className="flex flex-row justify-center mt-5">
-            <Link
-               to = "projects"
-               activeClass="active"
-               smooth = {true}
-               duration={400}
-            >
-                <TfiHandPointDown className = "animate-bounce" size = {50}/>
-            </Link>
+          <Link to="projects" activeClass="active" smooth={true} duration={400}>
+            <TfiHandPointDown className="animate-bounce" size={50} />
+          </Link>
         </div>
       </div>
     </section>
