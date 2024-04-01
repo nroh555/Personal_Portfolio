@@ -32,7 +32,7 @@ const skills = [
     skill: "TailwindCSS",
   },
   {
-    image: "/tech/Next.png",
+    image: "/tech/nxt.png",
     skill: "Next.JS",
   },
   {
