@@ -8,6 +8,22 @@ import Slide from "./Slide";
 
 const projects = [
   {
+    name: "Innoweight",
+    description:
+      "Lead front-end developer in a team of 5 for a web application that aims to streamline how nurses measures babies at Plunket. The web app offers parents and admin features as well.",
+    image: "/projects/innoweight.png",
+    github: "https://capstone-project-team-22.vercel.app/",
+    skills: ["Next.js", "TypeScript", "Express"],
+  },
+  {
+    name: "Cowmunity",
+    description:
+      "Lead back-end developer in a team of 7 to build a platform that streamlines the club searching, registration, and information-dissemination process for both club executives and students.",
+    image: "/projects/cowmunity.png",
+    github: "https://project-group-blue-cows.vercel.app/",
+    skills: ["Next.js", "TypeScript", "PostgreSQL"],
+  },
+  {
     name: "Taitamariki Potentia",
     description:
       "Project manager and developer of the web application with the aim of easing 1000+ students wanting to step foot into the tech industry.",
@@ -38,14 +54,6 @@ const projects = [
     image: "/projects/sapling.png",
     github: "https://github.com/nroh555/Sapling",
     skills: ["React", "Node.js", "Express.js"],
-  },
-  {
-    name: "NutriScan",
-    description:
-      "A real-time system that detects barcodes of food and drink products using OpenCV and Pyzbar via the user's webcam. Upon detection, it then fetches information from Open Food Facts API to retrieve information about the product's name, brand and nutrient level which will then be displayed to the user. ",
-    image: "/projects/nutriscan.png",
-    github: "https://github.com/nroh555/BarcodeDetection",
-    skills: ["Python", "OpenCV", "Pyzbar"],
   },
   {
     name: "This Website",
