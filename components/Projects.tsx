@@ -52,7 +52,7 @@ const projects = [
     description:
       "A web application that provides a gamified experience for co-workers to help them socialise within the workspace via Slack API. Awarded 2nd place for DEVS x GDSC 2023 hackathon.",
     image: "/projects/sapling.png",
-    github: "https://github.com/nroh555/Sapling",
+    github: "https://sapling-x3eb.onrender.com/",
     skills: ["React", "Node.js", "Express.js"],
   },
   {
