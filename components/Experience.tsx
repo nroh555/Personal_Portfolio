@@ -8,6 +8,19 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Image from "next/image";
 
+type ExperienceProps = {
+  experience: Experience;
+};
+
+type Experience = {
+  title: string;
+  company_name: string;
+  icon: string;
+  iconBg: string;
+  date: string;
+  points: string[];
+};
+
 const experiences = [
   {
     title: "Software Engineering Intern",
@@ -47,42 +60,45 @@ const experiences = [
   },
 ];
 
-const ExperienceCard = ({ experience }: any) => (
-  <VerticalTimelineElement
-    contentStyle={{ background: "#006AFA", color: "#fff" }}
-    contentArrowStyle={{ borderRight: "7px solid #006AFA" }}
-    iconStyle={{ background: experience.iconBg }}
-    icon={
-      <div className="flex justify-center items-center w-full h-full">
-        <Image
-          src={experience.icon}
-          height={100}
-          width={100}
-          alt={experience.company_name}
-          className="w-[60%] h-[60%] object-contain"
-        />
+const ExperienceCard = ({ experience }: ExperienceProps) => (
+  <>
+    <VerticalTimelineElement
+      visible={true}
+      contentStyle={{ background: "#006AFA", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid #006AFA" }}
+      iconStyle={{ background: experience.iconBg }}
+      icon={
+        <div className="flex justify-center items-center w-full h-full">
+          <Image
+            src={experience.icon}
+            height={100}
+            width={100}
+            alt={experience.company_name}
+            className="w-[60%] h-[60%] object-contain"
+          />
+        </div>
+      }
+    >
+      <div>
+        <h3 className="text-white text-2xl font-bold">{experience.title}</h3>
+        {experience.date}
+        <p className="text-2xl font-semibold" style={{ margin: 0 }}>
+          {experience.company_name}
+        </p>
       </div>
-    }
-  >
-    <div>
-      <h3 className="text-white text-2xl font-bold">{experience.title}</h3>
-      {experience.date}
-      <p className="text-2xl font-semibold" style={{ margin: 0 }}>
-        {experience.company_name}
-      </p>
-    </div>
-    <ul className="mt-5 list-disc ml-5 space-y-2">
-      <li className="text-white-100 text-[14px] pl-1 tracking-wider">
-        {experience.points[0]}
-      </li>
-      <li className="text-white-100 text-[14px] pl-1 tracking-wider">
-        {experience.points[1]}
-      </li>
-      <li className="text-white-100 text-[14px] pl-1 tracking-wider">
-        {experience.points[2]}
-      </li>
-    </ul>
-  </VerticalTimelineElement>
+      <ul className="mt-5 list-disc ml-5 space-y-2">
+        <li className="text-white-100 text-[14px] pl-1 tracking-wider">
+          {experience.points[0]}
+        </li>
+        <li className="text-white-100 text-[14px] pl-1 tracking-wider">
+          {experience.points[1]}
+        </li>
+        <li className="text-white-100 text-[14px] pl-1 tracking-wider">
+          {experience.points[2]}
+        </li>
+      </ul>
+    </VerticalTimelineElement>
+  </>
 );
 
 const Experience = () => {

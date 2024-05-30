@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
-import { ReactTyped } from "react-typed";
+import { ReactTyped, Typed } from "react-typed";
 import Slide from "./Slide";
 
 const projects = [
