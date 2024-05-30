@@ -1,7 +1,13 @@
-"use client";
 import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Naren Rohan",
+  description: "Naren Rohan's personal portfolio",
+  icons: "/logo.png",
+};
 
 export default function RootLayout({
   children,
@@ -10,11 +16,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
       <body className="dark:bg-stone-900" suppressHydrationWarning={true}>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
